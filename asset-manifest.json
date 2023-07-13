@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/TODO-react/static/css/main.51af269e.css",
+    "main.js": "/TODO-react/static/js/main.c092a05a.js",
+    "index.html": "/TODO-react/index.html",
+    "main.51af269e.css.map": "/TODO-react/static/css/main.51af269e.css.map",
+    "main.c092a05a.js.map": "/TODO-react/static/js/main.c092a05a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.51af269e.css",
+    "static/js/main.c092a05a.js"
+  ]
+}

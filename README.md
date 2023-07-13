@@ -1,6 +1,35 @@
+
+#  Documentation:
+1. The **App** component represents the main TODO app.
+2. The **useLocalStorage ** hook is used to handle storing and retrieving the TODOs from local storage.
+3. The **handleInputChange** function handles the change in the input field.
+4. The **handleFormSubmit** function handles the submission of the new TODO.
+5. The **handleTodoClick** function handles the toggling of the completion status of a TODO when clicked.
+6. The **handleTodoDelete** function handles the deletion of a specific TODO.
+7. The **handleResetClick** function handles the reset of all the TODOs.
+8. The **handleRemoveClick** function handles the removal of all completed tasks.
+9. The **activeTodos** variable stores the active TODOs by filtering out the completed ones.
+10. The **completedTodos** variable stores the completed TODOs by filtering them out.
+11. The rendered JSX displays the TODO app with the input form, active and completed TODO lists, and corresponding buttons.
+
+# Assumptions:
+
+1. The user can add new tasks by typing them into the input field and pressing Enter or clicking the "Add" button.
+2. The user can mark a task as completed by clicking on it, and it will be visually indicated with a line-through style.
+3. The user can reset the app to the initial state by clicking the "Reset" button.
+4. The user can remove all completed tasks by clicking the "Remove Completed Tasks" button when there are completed tasks present.
+
+# Unhandled Edge Cases:
+
+1. The code assumes that the input field is cleared after submitting a new task.
+2. The code assumes that the tasks are unique based on their IDs to avoid any conflicts.
+3. The code assumes that there are no duplicate tasks added to the list. If there are duplicates, the behavior may not be as expected.
+4. The code assumes that the local storage is available and accessible. If it is not, the app may not function correctly.
+
+
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [https://vijaysadhuram.github.io/TODO-react/).
 
 ## Available Scripts
 
@@ -29,42 +58,4 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
